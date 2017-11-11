@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>{{ .Title }}</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="/syntax.css">
+<link rel="stylesheet" href="/styles.css">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [['$(',')$']],
+    displayMath: [['$[',']$']],
+  },
+  asciimath2jax: {
+    delimiters: [['${','}$']],
+  },
+});
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<!-- anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(function() {
+  $("table").addClass("table table-striped table-bordered table-nonfluid");
+  anchors.options.placement = 'left';
+  anchors.add('.body h1, .body h2, .body h3, .body h4, .body h5, .body h6');
+  $("blockquote").addClass("blockquote");
+});
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+
+      <div class="nav">
+        <a class="left" href="{{ .Site.BaseURL }}/">{{ .Site.Title }}</a>
+      </div>
+
+      {{ block "content" . }}
+      {{ end }}
+
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

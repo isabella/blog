@@ -1,0 +1,19 @@
+---
+title: Isabella Tromba
+params:
+  disqus_shortname: isabellatromba
+baseURL: https://www.isabellatromba.com/
+permalinks:
+  blog: /:section/:year/:month/:day/:slug/
+metaDataFormat: yaml
+enableRobotsTXT: true
+pygmentsCodeFences: true
+pygmentsCodefencesGuessSyntax: true
+pygmentsUseClasses: true
+pygmentsOptions:
+  - linenos
+enableEmoji: true
+blackfriday:
+  extensions:
+  - hardLineBreak
+---

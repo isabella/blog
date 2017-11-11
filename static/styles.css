@@ -1,0 +1,27 @@
+/* styles.css */
+
+a:hover {
+  text-decoration: none;
+}
+
+.anchorjs-link, .anchorjs-link:hover {
+  color: #333;
+}
+
+.nav {
+  padding: 1rem 0rem;
+}
+
+.nav a {
+  font-size: 20px;
+  color: #333;
+}
+
+.table {
+  width: auto;
+}
+
+pre {
+  background-color: #F7F7F7;
+  padding: 1rem 1rem;
+}

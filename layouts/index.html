@@ -1,0 +1,12 @@
+{{ define "content" }}
+
+<ul class="list-unstyled">
+{{ range where .Site.Pages "Section" "blog" }}
+  <li>
+    <a href="{{ .URL }}">{{ .Title }}</a>
+    <small>{{ .Date.Format "2 January 2006" }}</small>
+  </li>
+{{ end }}
+</ul>
+
+{{ end }}

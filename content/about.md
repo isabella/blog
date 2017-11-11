@@ -2,6 +2,5 @@
 title: About
 ---
 
-[GitHub](https://github.com/nitsky)
-[Twitter](https://twitter.com/davidyamnitsky)
-[LinkedIn](https://linkedin.com/in/davidyamnitsky)
+[GitHub](https://github.com/isabella)
+[LinkedIn](https://linkedin.com/in/isabellatromba)
